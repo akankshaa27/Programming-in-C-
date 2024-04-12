@@ -84,6 +84,8 @@ class Manager: Employee
 int main()
 {
 	cout<<"Akanksha"<<endl;
+	cout<<"Akanksha"<<endl;
+	cout<<"Rollno 243006"<<endl;
 	Employee emp,emp2;
 	emp.display();
 	Employee emp1(20,3,"ABC",25000);
