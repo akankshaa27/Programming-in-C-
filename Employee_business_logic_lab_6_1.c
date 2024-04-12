@@ -52,6 +52,7 @@ class Employee
 };
 class Manager: Employee
 {
+	
 	double perf_Bonus, netSalary;
 
 //	void netSalary(Employee basicSalary)
@@ -63,11 +64,13 @@ class Manager: Employee
 //	}
 	public : Manager(int id,int deptno,string name,double basicSalary, double perf_Bonus) : Employee(id,deptno, name, basicSalary)
 	{
+		cout<<"Manager parameterised condtructor called"<<endl;
 		this->perf_Bonus=perf_Bonus;
 	}
 	
 	void calNetSalary()
 	{
+		cout<<"Net sal func called"<<endl;
 		cout<<"\n net sal of manager";
 		netSalary=basicSalary+perf_Bonus;
 		cout<<"\n net Salary of manager"<<netSalary;
@@ -80,6 +83,7 @@ class Manager: Employee
 };
 int main()
 {
+	cout<<"Akanksha"<<endl;
 	Employee emp,emp2;
 	emp.display();
 	Employee emp1(20,3,"ABC",25000);
